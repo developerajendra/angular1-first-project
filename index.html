@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learning Angular</title>
+	<script src="angular.min.js"></script>
+	<script src="angular-ui-route.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body ng-app="angular-learning">
+
+	<!-- <section class="search"> 
+		<input type="" name="">
+		<button>search</button>
+	</section> -->
+	
+	<ui-view></ui-view>
+
+	<script src="rootModule.js"></script>
+	<script src="app/routes.js"></script>
+	<script src="services/httpService.js"></script>
+	<script src="app/product-listing/productService.js"></script>
+	<script src="app/product-listing/product-listing-controller.js"></script>
+	<script src="directives/product-tile/productRefactorService.js"></script>
+	<script src="directives/product-tile/product-tile.js"></script>
+
+	
+</body>
+</html>

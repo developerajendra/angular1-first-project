@@ -1,0 +1,27 @@
+*{margin: 0;padding: 0;}
+body{
+	background-color: #4B6982;
+	padding: 30px;
+}
+
+button,input{
+	width: 80%;
+	float: left;
+	padding: 30px;
+	box-sizing: border-box;
+	border: none;
+}
+button{
+	width: 20%;
+	outline: none;
+	cursor: pointer;
+	
+}
+
+li{
+	list-style: none;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 5px 0 !important;
+}
