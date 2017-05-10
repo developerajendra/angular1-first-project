@@ -3,21 +3,18 @@
 	var app = angular.module("angular-learning");
  
  
- 	app.service('httpService', ["$http", function($http){
+ 	app.service('httpService', ["$http",'$q', function($http,$q){
 
  		this.getData = function(apiUrl){
-
-	 		return new Promise(function(resolve,reject){
-	 			 $http({
+	 		
+ 			return $http({
 			 		method:"GET",
 			 		url:"../data/"+apiUrl+".json"
 			 	}).then(function(response){
-			 		resolve(response.data);
+			 		return (response.data);
 			 	},function(response){
 			 		console.log(response);
-			 	})
-	 		});
-
+			 	});
  		}
 
 	}]);

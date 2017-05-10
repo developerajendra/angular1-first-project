@@ -11,17 +11,46 @@ button,input{
 	box-sizing: border-box;
 	border: none;
 }
-button{
+/*button{
 	width: 20%;
 	outline: none;
 	cursor: pointer;
 	
 }
-
+*/
 li{
 	list-style: none;
 }
 
 .list-inline-item:not(:last-child) {
     margin: 5px 0 !important;
+}
+
+h1{
+	text-align: center;
+	font-size:16px !important;
+}
+
+/*PRODUCT TILE
+-------------------------*/
+.product-tile .actions.actions.actions.actions.actions a {
+    color: #fff;
+    cursor: pointer;
+}
+.colors{
+	position: absolute;
+    right: 40px;
+    bottom: 69px;
+}
+.colors li{
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	border-radius: 50%;
+	margin: 5px;
+	float: left;
+}
+
+.colors li.active{
+	background: #000;
 }
