@@ -11,6 +11,12 @@ button,input{
 	box-sizing: border-box;
 	border: none;
 }
+.right{
+	float: right;
+}
+.logo{
+	    max-width: 200px;
+}
 /*button{
 	width: 20%;
 	outline: none;
@@ -29,6 +35,10 @@ li{
 h1{
 	text-align: center;
 	font-size:16px !important;
+}
+.products{
+	clear: both;
+	padding:17px 0 0;
 }
 
 /*PRODUCT TILE

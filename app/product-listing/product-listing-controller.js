@@ -8,6 +8,7 @@
  	 	*	Getting API url
  	 	*/
  	 	var location = $location.$$path.split("collection")[1].split("/")[1];
+ 	 	$scope.collection = location;
 
  		productService.getDate(location).then(function(pData){
  			$scope.data = pData;

@@ -5,7 +5,8 @@
  	app.directive("productTile",["productModalService",function(productModalService){
  		return {
  			scope : {
- 				data : "="
+ 				data : "=",
+ 				collection:"<"
  			},
  			restrict:"E",
  			templateUrl:"./directives/product-tile/product-tile.html",

@@ -9,13 +9,18 @@
  			controller:"productListingController",
  			controllerAs:"productListingCtrl"
  		}).state("pdp",{
- 			url:"/collection/:pid",
+ 			url:"/collection/:collectionName/:pid",
  			templateUrl:"app/product-details/product-details.html",
  			controller:"pdpController",
  			controllerAs:"pdpCtrl"
+ 		}).state("home",{
+ 			url:"/home",
+ 			templateUrl:"app/homepage/homepage.html",
+ 			controller:"homepageController",
+ 			controllerAs:"homepageCtrl"
  		})
 
- 		 $urlRouterProvider.otherwise("collection");
+ 		 $urlRouterProvider.otherwise("home");
  	});
 
 

@@ -3,7 +3,7 @@
 	<h1>{{data.h1}}</h1>
 	<ul class="list-inline">
 		<li class="list-inline-item col-xs-12 col-sm-6 col-lg-4" data-ng-repeat="item in data.tiles">
-			 <product-tile data="item.products"></product-tile>
+			 <product-tile collection="collection" data="item.products"></product-tile>
 		</li>
 	</ul>
 	
