@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;}
 body{
 	background-color: #4B6982;
-	padding: 30px;
+	/*padding: 30px;*/
 }
 
 button,input{
@@ -17,13 +17,14 @@ button,input{
 .logo{
 	    max-width: 200px;
 }
-/*button{
-	width: 20%;
-	outline: none;
-	cursor: pointer;
-	
+header{
+	    background: #2f7de1;
+	    padding: 10px 30px;
 }
-*/
+header nav a {
+    color: #e2eafa;
+    text-decoration: none;
+}
 li{
 	list-style: none;
 }
@@ -34,7 +35,7 @@ li{
 
 h1{
 	text-align: center;
-	font-size:16px !important;
+	font-size:25px !important;
 }
 .products{
 	clear: both;
@@ -63,4 +64,16 @@ h1{
 
 .colors li.active{
 	background: #000;
+}
+
+
+/*HOMEPAGE
+-------------------------*/
+.banner{
+	padding: 0 0 30px;
+}
+.banner img{
+	width: 100%;
+	vertical-align: initial;
+	margin-top: -10px;
 }

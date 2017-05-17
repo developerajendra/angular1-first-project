@@ -17,7 +17,7 @@
 				*/   
  				$scope.data = productModalService.manageProduct($scope.data,"050E114C045A07B8");
 
- 				console.log($scope.data);
+ 				// console.log($scope.data);
 
  				/**
  				* color index
