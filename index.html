@@ -5,6 +5,7 @@
 	<title>Learning Angular</title>
 	<script src="angular.min.js"></script>
 	<script src="angular-ui-route.js"></script>
+	<!-- <script src="service-worker.js"></script> -->
 
 	<link rel="stylesheet"  href="css/style.css">
 	<link rel="stylesheet"  href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -52,7 +53,20 @@
 	<script src="directives/product-tile/product-tile.js"></script>
 	<script src="directives/product-carousel/product-carousel.js"></script>
 	<script src="app/product-details/product-details-controller.js"></script>
+		
+	<script type="text/javascript">
+		if (!('serviceWorker' in navigator)) {
+			console.log("sorry your browser donesn't support service worker");
+		}else{
+			navigator.serviceWorker.register("service-worker.js").
+			then(function(){
+				console.log("service worker register");
+			},function(){
+				console.log("error");
+			})
+		}
 
+	</script>
 	
 </body>
 </html>
