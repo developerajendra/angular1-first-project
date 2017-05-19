@@ -100,7 +100,7 @@
 	});
 
 
-	fetchAndCache(url){
+	function fetchAndCache(url){
 		return fetch(url).then(function(response){
 			if(!response.ok){
 				 throw Error(response.statusText);

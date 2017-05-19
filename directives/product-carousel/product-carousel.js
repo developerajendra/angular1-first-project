@@ -19,8 +19,22 @@
 			 		angular.element(document).ready(function(){
 					 	$(".owl-carousel").owlCarousel({
 					 		items:$scope.showitems,
-					 		nav:$scope.navigation
-
+					 		nav:$scope.navigation,
+					 		 responsive:{
+						        0:{
+						            items:1,
+						            nav:true
+						        },
+						        600:{
+						            items:2,
+						            nav:false
+						        },
+						        1000:{
+						            items:4,
+						            nav:true,
+						            loop:false
+						        }
+						    }
 					 	});
 					});
 		 		},function(error){

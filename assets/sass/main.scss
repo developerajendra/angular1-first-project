@@ -11,13 +11,15 @@ button,input{
 	box-sizing: border-box;
 	border: none;
 }
+
+
 .right{
-	float: right;
+		float: right;
 }
 .logo{
 	    max-width: 200px;
 }
-header{
+header{  
 	    background: #2f7de1;
 	    padding: 10px 30px;
 }
@@ -72,8 +74,11 @@ h1{
 .banner{
 	padding: 0 0 30px;
 }
-.banner img{
+
+	.banner img{
 	width: 100%;
 	vertical-align: initial;
 	margin-top: -10px;
 }
+
+
