@@ -3,21 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Learning Angular</title>
-	<script src="angular.min.js"></script>
-	<script src="angular-ui-route.js"></script>
+	<title>Do-Trips</title>
+	<script src="./app/angular.min.js"></script>
+	<script src="./app/angular-ui-route.js"></script>
 
 	<link rel="manifest" href="manifest.json">
 	<!-- <script src="service-worker.js"></script> -->
 
-	<link rel="stylesheet"  href="assets/css/main.css">
+	<link rel="stylesheet"  href="./assets/css/main.css">
 	<link rel="stylesheet"  href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 	
 	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="./node_modules/jqlite/jqlite.js"></script>
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="js/libraries/owl-carousel.js"></script>
+	<script src="./assets/js/libraries/owl-carousel.js"></script>
 	
 
 </head>
@@ -31,7 +31,7 @@
 	<header>
 		<nav>
 		  <a class="navbar-brand" href="#">
-		  	<img class="logo" src="images/logo.png">
+		  	<img class="logo" src="./assets/images/logo.png">
 		  </a>
 		    <ul class="right">
 		      <li class="list-inline-item">  <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a></li>
@@ -43,18 +43,17 @@
 	
 	<ui-view></ui-view>
 
-	 
-
-	<script src="rootModule.js"></script>
-	<script src="app/index-route.js"></script>
-	<script src="services/httpService.js"></script>
-	<script src="services/productService.js"></script>
-	<script src="app/homepage/homepage-controller.js"></script>
-	<script src="app/product-listing/product-listing-controller.js"></script>
-	<script src="services/productModalService.js"></script>
-	<script src="directives/product-tile/product-tile.js"></script>
-	<script src="directives/product-carousel/product-carousel.js"></script>
-	<script src="app/product-details/product-details-controller.js"></script>
+	
+	<script src="./app/rootModule.js"></script> 
+	<script src="./app/index-route.js"></script>
+	<script src="./app/services/httpService.js"></script>
+	<script src="./app/services/productService.js"></script>
+	<script src="./app/homepage/homepage-controller.js"></script>
+	<script src="./app/product-listing/product-listing-controller.js"></script>
+	<script src="./app/services/productModalService.js"></script>
+	<script src="./app/directives/product-tile/product-tile.js"></script>
+	<script src="./app/directives/product-carousel/product-carousel.js"></script>
+	<script src="./app/product-details/product-details-controller.js"></script>
 		
 	<script type="text/javascript">
 		if (!('serviceWorker' in navigator)) {

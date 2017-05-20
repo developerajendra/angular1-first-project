@@ -9,7 +9,7 @@
 	 		
  			return $http({
 			 		method:"GET",
-			 		url:"../data/"+apiUrl+".json"
+			 		url:"app/data/"+apiUrl+".json"
 			 	}).then(function(response){
 			 		return (response.data);
 			 	},function(response){

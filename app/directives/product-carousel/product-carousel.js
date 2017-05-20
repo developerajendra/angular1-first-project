@@ -7,7 +7,7 @@
 				showitems:"<"
 			},
 			restrict:"E",
-			templateUrl:"./directives/product-carousel/product-carousel.html",
+			templateUrl:"app/directives/product-carousel/product-carousel.html",
 			controller:function($scope){
 				/**
 		 	 	*	Getting API url

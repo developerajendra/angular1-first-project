@@ -9,7 +9,7 @@
  				collection:"<"
  			},
  			restrict:"E",
- 			templateUrl:"./directives/product-tile/product-tile.html",
+ 			templateUrl:"app/directives/product-tile/product-tile.html",
  			controller: function($scope){
 				
 				/**

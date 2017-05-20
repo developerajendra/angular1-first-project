@@ -5,12 +5,12 @@
  		 
  		$stateProvider.state("collection",{
  			url: "/collection/:pid",
- 			templateUrl:"app/product-listing/product-listing.html",
+ 			templateUrl:"/app/product-listing/product-listing.html",
  			controller:"productListingController",
  			controllerAs:"productListingCtrl"
  		}).state("pdp",{
  			url:"/collection/:collectionName/:pid",
- 			templateUrl:"app/product-details/product-details.html",
+ 			templateUrl:"product-details/product-details.html",
  			controller:"pdpController",
  			controllerAs:"pdpCtrl"
  		}).state("home",{
