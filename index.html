@@ -8,7 +8,6 @@
 	<script src="./app/angular-ui-route.js"></script>
 
 	<link rel="manifest" href="manifest.json">
-	<!-- <script src="service-worker.js"></script> -->
 
 	<link rel="stylesheet"  href="./assets/css/main.css">
 	<link rel="stylesheet"  href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -23,34 +22,24 @@
 </head>
 <body ng-app="angular-learning">
 
-	<!-- <section class="search"> 
-		<input type="" name="">
-		<button>search</button>
-	</section> -->
-
-	<header>
-		<nav>
-		  <a class="navbar-brand" href="#">
-		  	<img class="logo" src="./assets/images/logo.png">
-		  </a>
-		    <ul class="right">
-		      <li class="list-inline-item">  <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a></li>
-		      <li  class="list-inline-item"><a class="nav-item nav-link" ui-sref="collection({pid:'womens-sunglasses'})">Womens Sunglasses </a></li>
-		      <li  class="list-inline-item"><a class="nav-item nav-link" ui-sref="collection({pid:'womens-eyeglasses'})">Womens Eyeglasses</a></li>
-		    </ul>
-		</nav>
-	</header>
-	
+	<app-header></app-header>
 	<ui-view></ui-view>
-
 	
 	<script src="./app/rootModule.js"></script> 
 	<script src="./app/index-route.js"></script>
+
+	<!-- Constants -->
+	<script src="./app/index.constants.js"></script>	
+	
+	<!-- Services -->
 	<script src="./app/services/httpService.js"></script>
 	<script src="./app/services/productService.js"></script>
 	<script src="./app/homepage/homepage-controller.js"></script>
 	<script src="./app/product-listing/product-listing-controller.js"></script>
 	<script src="./app/services/productModalService.js"></script>
+	
+	<!-- Directives -->
+	<script src="./app/directives/app-header/app-header.js"></script>
 	<script src="./app/directives/product-tile/product-tile.js"></script>
 	<script src="./app/directives/product-carousel/product-carousel.js"></script>
 	<script src="./app/product-details/product-details-controller.js"></script>
