@@ -10,7 +10,7 @@
 
 
 //Remaining other dynamic calls 10 sec == networkFirst **
-//self.toolbox.router.default = self.toolbox.networkFirst;
+self.toolbox.router.default = self.toolbox.cacheFirst;
 //self.toolbox.options.debug = true;
 
 //networkFirst
@@ -52,8 +52,8 @@ self.toolbox.router.get('/*(.html)', self.toolbox.cacheFirst, {
 
 
 
-self.toolbox.router.get(/index.html$/, self.toolbox.cacheFirst, {
-	origin: /localhost/,
+self.toolbox.router.get('/*', self.toolbox.cacheFirst, {
+	origin: /localhost:8080/,
 	"cache": {
 		name: 'index-html-routes',
 		maxEntries: 20,
