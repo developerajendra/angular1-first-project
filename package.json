@@ -17,14 +17,15 @@
   },
   "homepage": "https://github.com/developerajendra/angular1-first-project#readme",
   "dependencies": {
-   
     "gulp-sourcemaps": "^2.6.0",
-     "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "^4.0.0-alpha.6",
     "jqlite": "^0.2.42",
     "jquery": "^3.2.1",
     "sw-toolbox": "^3.6.0"
   },
   "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-mocks": "^1.6.6",
     "gulp-clean-css": "^3.3.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-connect": "^5.0.0",
