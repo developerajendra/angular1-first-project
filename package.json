@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/developerajendra/angular1-first-project#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
+   
     "gulp-sourcemaps": "^2.6.0",
+     "bootstrap": "^4.0.0-alpha.6",
     "jqlite": "^0.2.42",
     "jquery": "^3.2.1",
     "sw-toolbox": "^3.6.0"
