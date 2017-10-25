@@ -1,13 +1,22 @@
-<header>
+<header class="header">
 	<nav>
 	  <a class="navbar-brand" href="#">
 	  	<img class="logo" src="./assets/images/logo.png">
 	  </a>
-	    <ul class="right">
-	      <li data-ng-repeat="item in nav" class="list-inline-item">
-	        <a class="nav-item nav-link active" ui-sref="collection({pid:item.id})">{{item.name}} <span class="sr-only">(current)</span></a>
+	    <ul >
+	      <li data-ng-repeat="item in nav"  data-ng-if="item.name != 'Cart'" class="list-inline-item">
+	        <a class="nav-item nav-link active" ui-sref="collection({pid:item.id})">		{{item.name}} <span class="sr-only">(current)</span>
+	        </a>
 	       </li>
+
+	       <li data-ng-repeat="item in nav" data-ng-if="item.name == 'Cart'"  class="list-inline-item pull-md-right">
+	        	<a data-toggle="modal" data-target="#exampleModalLong" class="nav-item nav-link active" ui-sref="collection({pid:item.id})">	{{item.name}} <span class="sr-only">(current)</span>
+	        	</a>
+	       </li>
+
+	      
 	    </ul>
+
 	</nav>
 </header>
 <bag-component></bag-component>

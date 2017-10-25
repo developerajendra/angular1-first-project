@@ -1,0 +1,43 @@
+.bag {
+	.bag-modal-dialog{
+		max-width: 500px;
+	    float: right;
+	    width: 100%;
+	    margin: 57px 20px;
+	}
+	.modal-content{
+		border: none;
+    	border-radius:  0;
+    	&:after,&:before{
+    		bottom: 100%;
+			right: 23px;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+    	}
+    	&:after{
+			border-color: rgba(136, 183, 213, 0);
+			border-bottom-color: #fff;
+			border-width: 15px;
+			margin-left: -30px;
+    	}
+    	&:before{
+			border-color: rgba(194, 225, 245, 0);
+			border-width: 15px;
+			margin-left: -36px;
+    	}
+	}
+	.modal-header{
+		display: block;
+		h5{
+			float: left;
+		}
+		button{
+			float: right;
+			width: 20px;
+		}
+	}
+}

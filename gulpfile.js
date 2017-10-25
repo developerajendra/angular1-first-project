@@ -36,8 +36,9 @@ gulp.task('watch', function () {
 //Creating the server 
 gulp.task('serve',['watch'], function() {
   connect.server({
+     // port: 8888,
     livereload: true,
-    https:true
+    // https:true
   });
 });
 

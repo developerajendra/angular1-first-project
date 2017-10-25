@@ -12,16 +12,16 @@
 	<link rel="stylesheet"  href="./assets/css/main.css">
 	<link rel="stylesheet"  href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 	
-	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="./node_modules/jqlite/jqlite.js"></script>
+	<script src="./assets/js/libraries/jquery.js"></script>
+	<!-- <script src="./node_modules/jqlite/jqlite.js"></script> -->
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./assets/js/libraries/bootstrap.js"></script>
 	<script src="./assets/js/libraries/owl-carousel.js"></script>
 	
 
 </head>
 <body ng-app="angular-learning">
-
+<img src="../../assets/images/loader.gif">
 	<app-header></app-header>
 	<ui-view></ui-view>
 	
@@ -30,6 +30,9 @@
 
 	<!-- Constants -->
 	<script src="./app/index.constants.js"></script>	
+
+	<!-- Config -->
+	<script src="./app/index.config.js"></script>		
 	
 	<!-- Services -->
 	<script src="./app/services/httpService.js"></script>
@@ -37,15 +40,19 @@
 	<script src="./app/homepage/homepage-controller.js"></script>
 	<script src="./app/product-listing/product-listing-controller.js"></script>
 	<script src="./app/services/productModalService.js"></script>
+	<script src="./app/services/bagService.js"></script>
 	
 	<!-- Directives -->
 	<script src="./app/directives/app-header/app-header.js"></script>
 	<script src="./app/directives/product-tile/product-tile.js"></script>
 	<script src="./app/directives/product-carousel/product-carousel.js"></script>
 	<script src="./app/product-details/product-details-controller.js"></script>
+
+	<!-- Components -->
+	<script src="./app/components/bag-component/bag-component.js"></script>
 		
 	<script type="text/javascript">
-		if (!('serviceWorker' in navigator)) {
+		if (('serviceWorker' in navigator)) {
 			console.log("sorry your browser donesn't support service worker");
 		}else{
 			navigator.serviceWorker.register("service-worker.js").

@@ -27,6 +27,11 @@
     "gulp-clean-css": "^3.3.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-connect": "^5.0.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "install": "^0.10.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
   }
 }

@@ -10,7 +10,7 @@
  			controllerAs:"productListingCtrl"
  		}).state("pdp",{
  			url:"/collection/:collectionName/:pid",
- 			templateUrl:"product-details/product-details.html",
+ 			templateUrl:"/app/product-details/product-details.html",
  			controller:"pdpController",
  			controllerAs:"pdpCtrl"
  		}).state("home",{

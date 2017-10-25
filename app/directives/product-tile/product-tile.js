@@ -2,7 +2,7 @@
 
  	var app = angular.module("angular-learning");
 
- 	app.directive("productTile",["productModalService",function(productModalService){
+ 	app.directive("productTile",["productModalService","bagService",function(productModalService,bagService){
  		return {
  			scope : {
  				data : "=",
@@ -26,6 +26,11 @@
 
  				 $scope.changeColor = function(pid){
  				 	$scope.colorIndex = pid || 0;
+ 				 }
+
+ 				 //Add to cart
+ 				 $scope.addToCart = function(item){
+ 				 	bagService.setBag(item);
  				 }
  
  			}

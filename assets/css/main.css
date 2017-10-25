@@ -7205,4 +7205,73 @@ a.bg-danger:hover {
 .product-details {
   background: blue;
 }
+.bag .bag-modal-dialog {
+  max-width: 500px;
+  float: right;
+  width: 100%;
+  margin: 57px 20px;
+}
 
+.bag .modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.bag .modal-content:after,
+.bag .modal-content:before {
+  bottom: 100%;
+  right: 23px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.bag .modal-content:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #fff;
+  border-width: 15px;
+  margin-left: -30px;
+}
+
+.bag .modal-content:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-width: 15px;
+  margin-left: -36px;
+}
+
+.bag .modal-header {
+  display: block;
+}
+
+.bag .modal-header h5 {
+  float: left;
+}
+
+.bag .modal-header button {
+  float: right;
+  width: 20px;
+}
+.header .logo {
+  max-width: 200px;
+}
+
+.header header {
+  background: #2f7de1;
+  padding: 10px 30px;
+}
+
+.header header nav a {
+  color: #e2eafa;
+  text-decoration: none;
+}
+
+.header li {
+  list-style: none;
+}
+
+.header .list-inline-item:not(:last-child) {
+  margin: 5px 0 !important;
+}

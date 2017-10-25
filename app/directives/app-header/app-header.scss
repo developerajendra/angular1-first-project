@@ -1,3 +1,23 @@
 .header{
-	
+	.logo {
+	  max-width: 200px;
+	}
+
+	header {
+	  background: #2f7de1;
+	  padding: 10px 30px;
+	}
+
+	header nav a {
+	  color: #e2eafa;
+	  text-decoration: none;
+	}
+
+	li {
+	  list-style: none;
+	}
+
+	.list-inline-item:not(:last-child) {
+	  margin: 5px 0 !important;
+	}
 }
